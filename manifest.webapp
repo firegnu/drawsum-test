@@ -1,0 +1,111 @@
+{
+  "version": "1.1.7",
+  "name": "Drawsum",
+  "categories": ["games"],
+  "subtitle": "Connect numbers to challenge your brain",
+  "origin": "app://kaios.Drawsum.net",
+  "description": "As the timer ticks on, connect the numbers to achieve your goal. You must complete each number before time runs out!",
+  "launch_path": "/index.html",
+  "icons": {
+    "56": "/assets/icon-56.png",
+    "112": "/assets/icon-112.png"
+  },
+  "fullscreen" : true,
+  "developer": {
+    "name": "KaiOS",
+    "url": "http://kaiostech.com"
+  },
+  "type": "privileged",
+  "permissions": {
+    "mobiledata":{},
+    "wifidata":{},
+    "systemXHR": {},
+    "feature-detection" : {},
+    "contacts": {
+      "access": "readwrite"
+    },
+    "spatialnavigation-app-manage": {}
+  },
+  "datastores-access": {
+    "jio_service_store": {
+      "access": "readonly",
+      "description":"Jio Service store"
+    }
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "locales": {
+      "en-US": {
+        "name": "Drawsum",
+        "subtitle": "Connect numbers to challenge your brain",
+        "description": "As the timer ticks on, connect the numbers to achieve your goal. You must complete each number before time runs out!"
+      },
+    "pt-BR": {
+      "name": "Drawsum",
+      "subtitle": "Ligue números para desafiar a sua mente",
+      "description": "Ligue os números para atingir o objetivo, mas tenha em atenção o temporizador. Tem de concluir cada número antes do tempo acabar!"
+    },
+    "pt-PT": {
+      "name": "Drawsum",
+      "subtitle": "Ligue números para desafiar a sua mente",
+      "description": "Ligue os números para atingir o objetivo, mas tenha em atenção o temporizador. Tem de concluir cada número antes do tempo acabar!"
+    },
+    "ru-RU": {
+      "name": "Drawsum",
+      "subtitle": "Соединяйте цифры бросая вызов вашему интеллекту",
+      "description": "После включения таймера, соедините цифры, достигая цели. Вы должны заполнить каждую цифру до истечения времени!"
+    },
+    "ar-SA": {
+      "name": "Drawsum",
+      "subtitle": "صل الأرقام لتحدي عقلك",
+      "description": "عند بدء المؤقت، قم بتوصيل الأرقام لتحقيق هدفك. يجب إكمال كل رقم قبل نفاد الوقت!"
+    },
+    "de-DE": {
+      "name": "Drawsum",
+      "subtitle": "Zahlen verbinden und Herausforderungen meistern",
+      "description": "Verbinden Sie die Zahlen innerhalb des Zeitlimits, um das Ziel zu erreichen. Jede Zahl muss vor dem Ablaufen der Zeit fertig sein!"
+    },
+    "es-ES": {
+      "name": "Drawsum",
+      "subtitle": "Conecta los números para poner a prueba tu cerebro",
+      "description": "Cuando arranque el tiempo, conecta los números para conseguir tu objetivo. Debes completar cada número antes de que se acabe el tiempo."
+    },
+    "es-US": {
+      "name": "Drawsum",
+      "subtitle": "Conecta los números para poner a prueba tu cerebro",
+      "description": "Cuando arranque el tiempo, conecta los números para conseguir tu objetivo. Debes completar cada número antes de que se acabe el tiempo."
+    },
+    "fr-FR": {
+      "name": "Drawsum",
+      "subtitle": "Connectez les nombres pour défier votre intelligence",
+      "description": "Connectez les nombres pour atteindre votre objectif. Vous devez compléter chaque nombre avant la fin du temps imparti !"
+    },
+    "fr-CA": {
+      "name": "Drawsum",
+      "subtitle": "Connectez les nombres pour défier votre intelligence",
+      "description": "Connectez les nombres pour atteindre votre objectif. Vous devez compléter chaque nombre avant la fin du temps imparti !"
+    },
+    "sw-ZA": {
+      "name": "Drawsum",
+      "subtitle": "Unganisha namba uchemshe ubongo wako",
+      "description": "Unganisha namba huku muda ukiyoyoma unapoelekea lengo lako. Ni sharti ukamilishe kila namba kabla ya muda kuisha!"
+    },
+    "ur-PK": {
+      "name": "ڈرا سم ",
+      "subtitle": "اپنے دماغ کو چیلنج دینے کے لیے نمبروں کو جوڑیں ",
+      "description": "مقررہ وقت شروع ہوتے ہی اپنا مقصد حاصل کرنے کے لئے نمبروں کو جوڑیں۔ وقت ختم ہونے سے پہلے آپ کے لیے تمام نمبر مکمل کرنا ضروری ہے!"
+    },
+    "zh-CN": {
+      "name": "Drawsum",
+      "subtitle": "连接数字，不断挑战您的大脑",
+      "description": "在规定时间内，连接数字以实现您的目标。必须在规定时间内完成每个数字！"
+    },
+    "vi-VN": {
+      "name": "Drawsum",
+      "subtitle": "Nối các số để thử thách trí não của bạn",
+      "description": "Khi đồng hồ bấm giờ, hãy nối các số để đạt được mục tiêu của bạn. Bạn phải hoàn thành mỗi số trước khi hết thời gian!"
+    }
+  },
+  "default_locale": "en-US"
+}

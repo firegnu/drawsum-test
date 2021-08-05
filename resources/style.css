@@ -1,0 +1,34 @@
+
+@font-face {
+  font-family: 'Blogger Sans Medium';
+  src: url("./font/Blogger_Sans-Medium.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Blogger Sans Bold';
+  src: url("./font/Blogger_Sans-Bold.otf") format("opentype");
+  font-style: normal;
+}
+
+html, body {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  background-color: #000000;
+  border:none;
+}
+
+iframe[id^="vmx-frameInt_"] {
+  position: relative;
+  top: 26px;
+  background-color: #000000;
+}
+
+.holds-the-iframe {
+    background:url(../assets/loading.png) center center no-repeat;
+}
