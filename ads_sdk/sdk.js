@@ -2,6 +2,21 @@ document.addEventListener("DOMContentLoaded", () => {
   // Set the focus and start listening to key events.
   resetFocus(0);
   document.body.addEventListener("keydown", handleKeydownEvent);
+
+  // try to fix cursor issue
+  document.addEventListener('focus', function (e) {
+    if (document.querySelector("iframe")) {
+      console.log('got game focus with ads iframe!!!');
+      if(typeof window.jio_gameSDK !== 'undefined') {
+        window.jio_gameSDK.spatialNav(true);
+      }
+    } else {
+      console.log('got game focus without ads iframe!!!');
+      if(typeof window.jio_gameSDK !== 'undefined') {
+        window.jio_gameSDK.spatialNav(false);
+      }
+    }
+  });
 });
 
 // Very basic navigation/focus handler...
@@ -135,6 +150,14 @@ const KaiDisplayAdsSdk = (frameID) => {
       console.log('got viewability event....... open the cursor');
       window.jio_gameSDK.spatialNav(true);
     }
+    if(payload.event === 'click') {
+      console.log('...........sdk ads click........debug......');
+      const frame = getActiveAdFrame();
+      if (frame) {
+        console.log('...........sdk ads click...frame...removed........debug......');
+        frame.remove();
+      }
+    }
     if (handlers["ad" + payload.event]) {
       handlers["ad" + payload.event](payload.args);
     }
@@ -169,6 +192,7 @@ const KaiDisplayAdsSdk = (frameID) => {
    * @param {HTMLIFrameElement} frame
    */
   const initFrame = (frame, adspot, pkg, adref, cdata, w, h, topmargin, fullscreen, advid, uid) => {
+    window.jio_gameSDK.spatialNav(true);
     frame.onload = () => {
       frame.style.display = "block";
     };
